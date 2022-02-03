@@ -1,11 +1,10 @@
 import { ethers } from "hardhat"
-import { config } from "dotenv"
-import { MultiMint, ITarget } from "../typechain"
-import { ContractTransaction } from "ethers"
+import * as dotenv from "dotenv"
+import { ITarget } from "../typechain"
 import IT from "../artifacts/contracts/MultiMint.sol/ITarget.json"
-config()
 
 async function main() {
+  dotenv.config()
   const ta = process.env.TARGET_ADDR!
   // this get the signer from hardhat.config.ts
   const signer = (await ethers.getSigners())[0]
