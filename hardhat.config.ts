@@ -26,8 +26,10 @@ const config: HardhatUserConfig = {
       accounts: [process.env.PRIVATE_KEY!],
     },
     polygon: {
-      url: process.env.POLYGON_URL!,
+      url: process.env.ALCHEMY_API!,
       accounts: [process.env.PRIVATE_KEY!],
+      gasPrice: "auto",
+      gasMultiplier: 1.2,
     },
   },
   gasReporter: {

@@ -5,13 +5,25 @@
 - `MultiMint` contract creat `Minter`s who in constructor do
   - call `publicMint` and transfer the minted NFT to `to`
 
+## Shorcuts
+
+- `yarn hh` = `yarn hardhat`
+- `yarn fork` = `yarn hardhat node`
+- `yarn deploy` = `yarn run hardhat scripts/deploy.ts`
+- `yarn mint` = `yarn run hardhat scripts/mint.ts`
+
+## Testing
+
+- config `.env`
+- `yarn fork` to fork mainnet to localhost
+
 ## Usage
 
 - config `.env`
 - deploy with `scripts/deploy.ts`
-  - `yarn run hardhat run scripts/deploy.ts --network polygon`
+  - `yarn deploy --network polygon`
 - mint with `scripts/mint.ts`
-  - `yarn run hardhat run scripts/mint.ts --network polygon`
+  - `yarn mint --network polygon`
 
 ## Default
 

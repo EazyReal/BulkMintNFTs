@@ -37,5 +37,12 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.4.2"
+  },
+  "scripts": {
+    "hh": "hardhat",
+    "fork": "hardhat node", 
+    "deploy": "hardhat run scripts/deploy.ts",
+    "mint": "hardhat run scripts/mint.ts",
+    "show": "hardhat run scripts/show.ts"
   }
 }
