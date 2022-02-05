@@ -10,3 +10,6 @@ typechain
 #Hardhat files
 cache
 artifacts
+
+#log files
+**/.log
