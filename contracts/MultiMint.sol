@@ -23,7 +23,11 @@ contract Minter {
 contract MultiMint is Ownable {
     constructor() {}
 
-    function bulkMint(address addr, address to, uint256 n) public onlyOwner {
+    function bulkMint(
+        address addr,
+        address to,
+        uint256 n
+    ) public onlyOwner {
         // can use function signature instead to reuse
         for (uint256 i = 0; i < n; i++) {
             Minter minter = new Minter(addr, to);
