@@ -2,7 +2,7 @@ import "fs"
 import { readFileSync, writeFileSync } from "fs"
 
 const ids = JSON.parse(
-  readFileSync(`./data/ids`, { encoding: "utf8", flag: "r" })
+  readFileSync(`./data/ids.json`, { encoding: "utf8", flag: "r" })
 )
 
 let prizes = new Map<string, number>()
